@@ -7,13 +7,14 @@ export class HeaderPageNavBar extends Component {
         super(props);
         this.state = {  }
     }
+
     render() { 
         return ( 
             <div className="NavBar">
                 <h1>Alexandru Nasalean</h1>
                 <Nav className="justify-content-center" activeKey="/home">
                     <Nav.Item>
-                    <Nav.Link href="/">HomePage</Nav.Link>
+                    <Nav.Link href="/" id="HomePageNaveBarTab" >HomePage</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                     <Nav.Link eventKey="ExperiencePage" href="/ExperiencePage">ExperiencePage</Nav.Link>

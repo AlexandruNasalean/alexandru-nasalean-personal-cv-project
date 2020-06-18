@@ -11,12 +11,14 @@ import {PersonalInformationPage} from "./Components/Personal-InformationPage";
 import {Studies} from "./Components/Studies";
 import {Layout} from "./Components/Layout";
 import {HomePage} from "./Components/Homepage"
+import {Footer} from "./Components/Footer"
+
 
 
 function App() {
   return (
+
     <React.Fragment>
-      <Layout>
         <HeaderPageNavBar/>
       <Router>
         <Switch>
@@ -25,9 +27,10 @@ function App() {
           <Route exact path="/PersonalInformationPage" component={PersonalInformationPage}/>
           <Route exact path="/Studies" component={Studies}/>
         </Switch>
+        <Footer/>
       </Router>
-      </Layout>
     </React.Fragment>
+
   );
 }
 

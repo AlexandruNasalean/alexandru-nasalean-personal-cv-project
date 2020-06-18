@@ -5,12 +5,10 @@ import "../HomePage.css";
 
 
 export class HomePage extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
+
     render() { 
         return ( 
+            <div className="container">
             <div className="HomePage-Container">
                 <Image src={portrait} roundedCircle  id="portrait"/>
                 <div className="Homepage-Text">
@@ -24,6 +22,7 @@ export class HomePage extends Component {
                 <br/>
                 Seeking to be inspired, to envision the unlikely, to work hard for things that are worth it, and to be surrounded by those who bring out the best in me.</p>
                 </div>
+            </div>
             </div>
          );
     }
