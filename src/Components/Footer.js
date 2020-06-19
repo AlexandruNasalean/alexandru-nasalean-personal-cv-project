@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import {  faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
 import Button from 'react-bootstrap/Button';
+import { Link } from "react-router-dom";
 
 export function Footer() {
     return (
@@ -23,7 +24,9 @@ export function Footer() {
         {/* Col 3 */}
         <div className="col">
           <div className="ContactButton">
+          <Link className="link" to="/ContactPage">            
           <button>Contact Me</button>
+            </Link>
           </div>
          
         </div>
