@@ -1,0 +1,80 @@
+.main-footer{
+    background-color: #34385b;
+    margin-top: auto;
+}
+
+.Icons{
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.Icons a{
+    font-size: 30px;
+    color: white;
+    border:2px solid #fb2968;
+    margin-left: 20px;
+    border-radius: 30%;
+    padding: 6px 15px;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+
+}
+
+
+.ContactButton{
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ContactButton button{
+    color: white;
+    font-weight: bolder;
+    padding: 15px 20px;
+    border:2px solid #fb2968;
+    background-color: #34385b;
+    transition: all 0.3s cubic-bezier(0.805, 0.005, 0.225, 1.005) 0s;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0.805, 0.005, 0.225, 1.005);
+    transition-delay: 0s;
+    border-radius: 10%;
+}
+.ContactButton button:hover{
+    background-color: #fb2968;
+}
+#LinkdInLogo{
+    position: relative;
+    top: 0;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+#LinkdInLogo:hover{
+    top: -10px;
+    color: #fb2968;
+}
+
+#GitHubLogo{
+    position: relative;
+    top: 0;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+#GitHubLogo:hover{
+    top: -10px;
+    color: #fb2968;
+}
+
+#Footer-Row{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+

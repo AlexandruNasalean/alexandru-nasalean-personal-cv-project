@@ -11,12 +11,15 @@ import {PersonalInformationPage} from "./Components/Personal-InformationPage";
 import {Studies} from "./Components/Studies";
 import {Layout} from "./Components/Layout";
 import {HomePage} from "./Components/Homepage"
+import {Footer} from "./Components/Footer"
+import {ContactPage} from "./Components/ContactPage"
+
 
 
 function App() {
   return (
+
     <React.Fragment>
-      <Layout>
         <HeaderPageNavBar/>
       <Router>
         <Switch>
@@ -24,10 +27,12 @@ function App() {
           <Route exact path="/ExperiencePage" component={ExperiencePage}/>
           <Route exact path="/PersonalInformationPage" component={PersonalInformationPage}/>
           <Route exact path="/Studies" component={Studies}/>
+          <Route exact path="/ContactPage" component ={ContactPage}/>
         </Switch>
+        <Footer/>
       </Router>
-      </Layout>
     </React.Fragment>
+
   );
 }
 
