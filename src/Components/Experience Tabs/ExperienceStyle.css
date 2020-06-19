@@ -1,5 +1,5 @@
 .ExperiencePageTitle h1{
-    color: #34385b;
+    color: #8e9fa3;
     text-align: center;
     margin-bottom: 50px;
     margin-top: 20px;
@@ -10,7 +10,7 @@
     line-height: 28px;
 }
 .Luminos-Container h3{
-    color:  #fb2968;
+    color:  #d15b57;
 }
 
 .Gameloft-Container{
@@ -21,7 +21,7 @@
 }
 
 .Gameloft-Container h3{
-    color:  #fb2968;
+    color:  #d15b57;
 
 }
 
@@ -33,7 +33,7 @@
 }
 
 .Upc-Container h3{
-    color:  #fb2968;
+    color:  #d15b57;
 
 }
 
@@ -45,18 +45,19 @@
 }
 
 .Altex-Container h3{
-    color:  #fb2968;
+    color:  #d15b57;
 
 }
 
 .list-group-item-action{
     font-weight: bold;
-    color: #34385b;
+    color: #8e9fa3;
 }
 .list-group-item.active{
-    background-color: #fb2968;
-    border-color: #fb2968;
+    background-color: #d15b57;
+    border-color: #d15b57;
 }
 .list-group-item{
+    background-color: #fafafa;
     border: 13px solid rgba(0,0,0,.125);
 }
