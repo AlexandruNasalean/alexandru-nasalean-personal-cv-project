@@ -18,41 +18,7 @@ export class ContactPage extends Component {
 
     submitHandler = (event) => {
         event.preventDefault();
-        require('dotenv').config();
-        const nodemailer =  require('nodemailer');
-
-
-        //Step 1
-
-        let transporter = nodemailer.createTransport({
-            service: 'gmail',
-            auth: {
-                user: process.env.EMAIL,
-                pass: process.env.PASSWORD,
-            }
-        });
-
-        //Step 2
-        let mailOptions ={
-            from: this.state.email,
-            to: 'alexandru.nasalean.off@gmail.com',
-            subject: 'Testing',
-            text: this.state.textarea,
-        }
-
-        //Step 3
-
-        transporter.sendMail(mailOptions, function(err, data){
-            if(err){
-                console.log("error occured")
-            }else{
-                console.log("Email sent!")
-            }
-        })
-
-        console.log(this.state.FullName);
-        console.log(this.state.email);
-        console.log(this.state.textarea)
+      console.log("SAD")
     }
     render() {
         const {FullName, email, textarea} =  this.state;
