@@ -16,7 +16,6 @@ app.get('/', ()=>{
 })
 
 app.post('/api/forma', (req,res)=>{
-
 let data=req.body;
 
 let smtpTransport = nodemailer.createTransport({
@@ -24,7 +23,7 @@ let smtpTransport = nodemailer.createTransport({
    port:465,
    auth:{
     user:'alexandru.nasalean.off@gmail.com',
-    pass:"Energon123"
+    pass:"Nasalean1997"
    }
 });
 
@@ -32,17 +31,18 @@ let smtpTransport = nodemailer.createTransport({
 let mailOptions={
     from:data.email,
     to:'alexandru.nasalean.off@gmail.com',
-    subject:`Message from ${data.FullName}`,
+    subject:`Message from ${data.name}`,
     html:`
     
     <h3>Informations</h3>
     <ul>
-      <li>Name: ${data.FullName}</li>
+      <li>Name: ${data.name}</li>
+      <li>Lastname: ${data.lastname}</li>
       <li>Email: ${data.email}</li>
     
     </ul> 
     <h3>Message</h3> 
-    <p>${data.textarea}</p>  
+    <p>${data.message}</p>  
     
     `
 

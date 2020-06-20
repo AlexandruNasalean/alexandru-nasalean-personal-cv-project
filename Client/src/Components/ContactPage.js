@@ -49,12 +49,6 @@ export class ContactPage extends Component {
         FullName: [],
         textarea: [],
       })
-
-      setTimeout( () => {
-        this.setState({
-          sent: false,
-        })
-      },3000)
     }
 
     render() {

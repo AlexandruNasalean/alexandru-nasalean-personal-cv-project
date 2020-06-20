@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Back end",
   "main": "index.js",
-  "scripts":  {
+  "scripts": {
     "start": "node index.js",
-    "server": "nodemon index.js",
-    "front_end": "npm start --prefix front_end",
-    "dev": "concurrently \"npm run server\" \"npm run front_end\""
+    "backend": "nodemon index.js",
+    "frontend": "npm run front --prefix client",
+    "dev": "concurrently \"npm run backend\"  \"npm run start --prefix client\""
   },
   "repository": {
     "type": "git",
