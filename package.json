@@ -1,0 +1,30 @@
+{
+  "name": "alexandru-nasalean-personal-cv-project",
+  "version": "1.0.0",
+  "description": "Back end",
+  "main": "index.js",
+  "scripts":  {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "front_end": "npm start --prefix front_end",
+    "dev": "concurrently \"npm run server\" \"npm run front_end\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexandruNasalean/alexandru-nasalean-personal-cv-project.git"
+  },
+  "author": "Alexandru Nasalean",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexandruNasalean/alexandru-nasalean-personal-cv-project/issues"
+  },
+  "homepage": "https://github.com/AlexandruNasalean/alexandru-nasalean-personal-cv-project#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemailer": "^6.4.10",
+    "nodemon": "^2.0.4"
+  }
+}

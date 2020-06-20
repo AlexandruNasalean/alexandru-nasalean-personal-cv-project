@@ -1,25 +1,62 @@
 import React, { Component } from "react";
 import Button from 'react-bootstrap/Button';
 import {Form, Row, Col} from "react-bootstrap";
+import axios from "axios";
 
 
 export class ContactPage extends Component {
     constructor(props) {
         super(props);
         this.state = { 
-            email: [],
-            FullName: [],
-            textarea: "",
+            email: '',
+            FullName: '',
+            textarea: '',
+            sent: false,
          }
     }
+
     changeHandler = (e) => {
         this.setState({ [e.target.name]: e.target.value });
       };
 
     submitHandler = (event) => {
         event.preventDefault();
-      console.log("SAD")
+
+        let data = {
+          name:this.state.FullName,
+          email: this.state.email,
+          textarea: this.state.textarea,
+        }
+
+        axios.post('/api/forma',data)
+        .then(res=>{
+          this.setState({
+            sent:true,
+          },this.resetForm())
+        })
+        .catch(()=>{
+          console.log('message not send');
+          
+        })
+        
+       
+       }
+
+    resetForm = () =>{
+
+      this.setState({
+        email: [],
+        FullName: [],
+        textarea: [],
+      })
+
+      setTimeout( () => {
+        this.setState({
+          sent: false,
+        })
+      },3000)
     }
+
     render() {
         const {FullName, email, textarea} =  this.state;
         return ( 
