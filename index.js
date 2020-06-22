@@ -37,12 +37,11 @@ let mailOptions={
     <h3>Informations</h3>
     <ul>
       <li>Name: ${data.name}</li>
-      <li>Lastname: ${data.lastname}</li>
       <li>Email: ${data.email}</li>
     
     </ul> 
     <h3>Message</h3> 
-    <p>${data.message}</p>  
+    <p>${data.textarea}</p>  
     
     `
 
