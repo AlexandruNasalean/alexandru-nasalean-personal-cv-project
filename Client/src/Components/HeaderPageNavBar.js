@@ -3,10 +3,6 @@ import Nav from 'react-bootstrap/Nav'
 import "../NavBar.css";
 
 export class HeaderPageNavBar extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
 
     render() { 
         return ( 
@@ -20,7 +16,7 @@ export class HeaderPageNavBar extends Component {
                     <Nav.Link eventKey="ExperiencePage" href="/ExperiencePage">ExperiencePage</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                    <Nav.Link eventKey="PersonalInformationPage" href="/PersonalInformationPage">PersonalInformationPage</Nav.Link>
+                    <Nav.Link eventKey="Gallery" href="/Gallery">Gallery</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                     <Nav.Link eventKey="PersonalInformationPage" href="/Studies">Studies</Nav.Link>
