@@ -1,6 +1,7 @@
 body,
 #root,
-.app{
+.app
+.App{
   height: 100%;
   width: 100%;
   display: flex;

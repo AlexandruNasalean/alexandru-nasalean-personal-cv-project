@@ -42,6 +42,7 @@
     transition-timing-function: cubic-bezier(0.805, 0.005, 0.225, 1.005);
     transition-delay: 0s;
     border-radius: 10%;
+    
 }
 .ContactButton button:hover{
     background-color: #fb2968;
