@@ -1,7 +1,6 @@
 import React, {useEffect } from "react";
 import './App.css';
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
@@ -28,7 +27,6 @@ function App() {
     <SimpleReactLightbox>
     <React.Fragment>
         <HeaderPageNavBar/>
-      <Router>
         <Switch>
           <Route exact path="/" component={HomePage}/>
           <Route exact path="/ExperiencePage" component={ExperiencePage}/>
@@ -37,7 +35,6 @@ function App() {
           <Route exact path="/ContactPage" component ={ContactPage}/>
         </Switch>
         <Footer/>
-      </Router>
     </React.Fragment>
     </SimpleReactLightbox>
 

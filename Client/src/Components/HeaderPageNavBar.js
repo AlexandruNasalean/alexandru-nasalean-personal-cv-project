@@ -6,9 +6,9 @@ export class HeaderPageNavBar extends Component {
 
     render() { 
         return ( 
-            <div className="NavBar">
-                <h1>Alexandru Nasalean</h1>
-                <Nav className="justify-content-center" activeKey="/home">
+            <div className="container">
+                
+                <Nav className="justify-content-end" activeKey="/home">
                     <Nav.Item>
                     <Nav.Link href="/" id="HomePageNaveBarTab" >HomePage</Nav.Link>
                     </Nav.Item>
@@ -24,7 +24,10 @@ export class HeaderPageNavBar extends Component {
                     <Nav.Item>
                     </Nav.Item>
                 </Nav>
+     
             </div>
+        
+          
          );
     }
 }
