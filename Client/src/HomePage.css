@@ -1,0 +1,20 @@
+#portrait{
+    width: 200px;
+    height: 200px;
+    margin-right: 30px;
+    
+}
+
+.HomePage-Container{
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+}
+
+.Homepage-Text{
+    font-weight: lighter;
+    font-size: 15px;
+    line-height: 28px;
+
+
+}

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../Experience Tabs/ExperienceStyle.scss"
+import "../Experience Tabs/ExperienceStyle.css"
 
 
 export class LuminosJob extends Component {
@@ -7,7 +7,7 @@ export class LuminosJob extends Component {
         return ( 
             <div className="container">
                 <div className="Luminos-Container">
-                <h3>Luminos Software</h3>
+                <h3>Junior Support/QA Analyst</h3>
                 <hr/>
                 <h4>March 2019-April 2020</h4>
                 <h5>1 Year, 2 Months</h5>

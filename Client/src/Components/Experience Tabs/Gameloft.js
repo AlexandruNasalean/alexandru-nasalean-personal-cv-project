@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../Experience Tabs/ExperienceStyle.scss"
+import "../Experience Tabs/ExperienceStyle.css"
 
 
 export class GameloftJob extends Component {
@@ -7,7 +7,7 @@ export class GameloftJob extends Component {
         return ( 
             <div className="container">
                 <div className="Gameloft-Container">
-                <h3>Gameloft</h3>
+                <h3>Quality Assurance Analyst </h3>
                 <hr/>
                 <h4>April 2016 - July 2016</h4>
                 <h5>4 Months</h5>

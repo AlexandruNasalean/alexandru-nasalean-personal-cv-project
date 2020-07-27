@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../Experience Tabs/ExperienceStyle.scss"
+import "../Experience Tabs/ExperienceStyle.css"
 
 
 export class AltexJob extends Component {
