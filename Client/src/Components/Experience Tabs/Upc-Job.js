@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../Experience Tabs/ExperienceStyle.css"
+import "../Experience Tabs/ExperienceStyle.scss"
 
 
 export class UpcJob extends Component {
@@ -7,7 +7,7 @@ export class UpcJob extends Component {
         return ( 
             <div className="container">
                 <div className="Upc-Container">
-                <h3>Technical Support Help Desk </h3>
+                <h3>UPC Romania </h3>
                 <hr/>
                 <h4>September 2019-February 2019</h4>
                 <h5>6 Months</h5>

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Button from 'react-bootstrap/Button';
 import {Form, Row, Col} from "react-bootstrap";
 import axios from "axios";
+import './ContactPage.scss'
 
 
 export class ContactPage extends Component {
@@ -13,6 +14,9 @@ export class ContactPage extends Component {
             textarea: '',
             sent: false,
          }
+    }
+    componentDidUpdate(){
+      setTimeout(() => this.setState({sent:false}), 7500);
     }
 
     changeHandler = (e) => {
@@ -34,8 +38,9 @@ export class ContactPage extends Component {
             sent:true,
           },this.resetForm())
         })
+        
         .catch(()=>{
-          console.log('message not send');
+          console.log('message not sent');
           
         })
         
@@ -48,13 +53,18 @@ export class ContactPage extends Component {
         email: [],
         FullName: [],
         textarea: [],
+        sent: false,
       })
     }
+    
 
     render() {
-        const {FullName, email, textarea} =  this.state;
-        return ( 
-            <div className="container">
+        const {FullName, email, textarea, sent} =  this.state;
+        return (
+          <div className="container-wrap">
+          <div className="container">
+          <p>Contact me</p>
+            <div className="contact-container">
                 <Form onSubmit={this.submitHandler}>
                 <Form.Group  controlId="validationCustom01">
           <Form.Label>Full Name</Form.Label>
@@ -68,9 +78,10 @@ export class ContactPage extends Component {
           />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
-  <Form.Group controlId="formBasicEmail">
+  <Form.Group controlId="validationCustom01">
     <Form.Label>Email address</Form.Label>
     <Form.Control 
+    required
     type="email"
     placeholder="Enter email"
     name="email"
@@ -80,9 +91,10 @@ export class ContactPage extends Component {
       We'll never share your email with anyone else.
     </Form.Text>
   </Form.Group>
-  <Form.Group controlId="exampleForm.ControlTextarea1">
-    <Form.Label>Example textarea</Form.Label>
+  <Form.Group ccontrolId="validationCustom01">
+    <Form.Label>Leave me a message down bellow:</Form.Label>
     <Form.Control 
+    required
     as="textarea" 
     rows="3" 
     name="textarea"
@@ -90,16 +102,20 @@ export class ContactPage extends Component {
     onChange={this.changeHandler}
     />
   </Form.Group>
-  <Form.Group controlId="formBasicCheckbox">
-    <Form.Check type="checkbox" label="Check me out" />
-  </Form.Group>
   <Button variant="primary" type="submit">
     Submit
   </Button>
+  <div className="Confirmation-wrap">
+  {(sent)?<h1>The Email has been sent!</h1>:""}
+  </div>
 </Form>
 
             </div>
+          </div>
+          </div>
          );
     }
 }
  
+
+

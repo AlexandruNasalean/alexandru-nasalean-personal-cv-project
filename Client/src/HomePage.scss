@@ -1,9 +1,11 @@
-// #portrait{
-//     width: 200px;
-//     height: 200px;
-//     margin-right: 30px;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400;1,900&display=swap');
+
+#portrait{
+    width: 500px;
+    height: 500px;
     
-// }
+}
 
 // .HomePage-Container{
 //     display: flex;
@@ -21,27 +23,157 @@
 // #landingImage{
 
 // } */
-.mainsection{
 
+$pink: #fb2968;
+
+$purple: #34385b;
+
+#scroll-down-text span{
+    font-size: 2rem;
+    animation: ScrollList 4s steps(60, end); 
+}
+
+
+.Introduction-Portrait img{
+   width: 500px;
+   height: 600px;
+   order:1;
+   display: flex;
+   box-shadow: 1px 1px 20px $pink;
+//    border: $pink 6px solid;
+//    box-shadow: 1px 1px 1px 5px $pink
+}
+
+    .mainsection{
+            
     .LandingSection{
-        height: 90vh;
-        background-color: skyblue
+
+        height: 100vh;
     }
 
     .Introduction{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
     height: 100vh;
-    background-color: rebeccapurple;
-    }
+    background-image: url("Introduction2.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
 
-    .Experience{
-        height: 100vh;
-        background-color: rosybrown;
+    
+
+
+        .Homepage-Text{
+            color: $pink;
+            font-family: 'Roboto', sans-serif;
+            margin: 50px;
+            
+        }
+
+        .Homepage-Text p{
+            color: $purple ;
+        }
     }
 
     .Galery{
-        height:100vh;
-        background-color: salmon;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+        background-color: #eeeeee;
+        background-image: url("Galery-Introduction1.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        a{
+            align-self: center;
+            align-content: center;
+            align-items: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 4rem;
+            color:$purple;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 30px;
+            
+        }
+
+        p{
+                font-family: 'Roboto', sans-serif;
+                font-size: 2rem;
+                color:$purple;
+                text-align: center;
+                text-transform: uppercase;
+                text-decoration: none;
+    
+        }
+
+        a:hover{
+            text-decoration: none;
+            color: $pink;
+        }
+
+        a:link{
+            text-decoration: none;
+            box-shadow: 1px 1px 10px $pink;
+            background-color: white;
+
+        }
+
     }
+
+    .Professional-Work{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+        background-color: #eeeeee;
+        background-image: url("CV.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        a{
+            align-self: center;
+            align-content: center;
+            align-items: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 3rem;
+            color:$purple;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 30px;
+            
+        }
+
+        p{
+                font-family: 'Roboto', sans-serif;
+                font-size: 2rem;
+                color:$purple;
+                text-align: center;
+                text-transform: uppercase;
+                text-decoration: none;
+    
+        }
+
+        a:hover{
+            text-decoration: none;
+            color: $pink;
+        }
+
+        a:link{
+            text-decoration: none;
+            box-shadow: 1px 1px 10px $pink;
+            background-color: white;
+
+        }
+    }
+
 }
 
 .homepage-first-slide{
@@ -52,100 +184,141 @@
     bottom:0;
     right:0;
     height:100vh;
+    font-family: 'Roboto', sans-serif;
     background-color: #eeeeee;
     animation-name: Landing;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     justify-content: center;
     align-items: center;
+    text-align: center;
+
 }
 
 .Greeting {
+    font-family: 'Roboto', sans-serif;
     margin: auto;
     opacity: 1;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
     font-size: 7rem;
-    color: #2b2b2b;
+    color:$purple;
     text-align: center;
     width: 30%;
     text-transform: uppercase;
     font-weight: 300;
-
 
 }
 
 
 .Greeting span::before{
     content: '';
-    animation: animate;
-    animation-duration: 4s;
+    animation: GreetingAnimation;
+    animation-duration: 5s;
     animation-delay: 3s;
     transition: ease-in-out;
-
 
 }
 
 .homepage-second-slide{
+    font-family: 'Roboto', sans-serif;
     opacity: 0;
     display: flex;
     position: absolute;
+    flex-direction: column;
     top:0;
     left:0;
     bottom:0;
     right:0;
-    width: 100%;
-    height: auto;
+    height:100vh;
     background-color: #eeeeee;
-    animation-name: LandingCamera;
-    animation-duration: 2s;
-    animation-delay: 5s;
+    animation-name: second-slide;
+    animation-duration: 3s;
+    animation-delay: 6s;
     animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
+    justify-content: center;
+    align-items: center;
+    animation-fill-mode:forwards;
+    text-align: center;
 
-
-    p{
-        color: Pink; 
-            font-family: "Courier";
-            font-size: 20px;
-            white-space: nowrap;
-            overflow: hidden; 
-            width: 30em;
-            animation: type 4s steps(60, end); 
-            animation-delay: 6s;
-            z-index: 20;
+    h2{
+        margin: auto;
+        opacity: 1;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
+        font-size: 7rem;
+        color:$purple;
+        text-align: center;
+        width: 30%;
+        text-transform: uppercase;
+        font-weight: 300;
+   
+    
+    }
+    span{
+        margin: auto;
+        opacity: 1;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
+        font-size: 7rem;
+        color: $pink;
+        text-align: center;
+        width: 30%;
+        text-transform: uppercase;
+        font-weight: 300;  
+        
     }
 
-    img{
-        z-index: 19;
-        width: 100%;
-        height: auto;
-            background-image: -webkit-gradient(linear, left bottom, left top, color-stop(2%, white), 
-    to(rgba(245, 245, 245, 0))), url("https://i.imgur.com/9htnS7A.jpg");
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(2%, white), 
-    to(rgba(245, 245, 245, 0))), url("https://i.imgur.com/9htnS7A.jpg");
-    background-image: linear-gradient(0deg, white 2%, rgba(245, 245, 245, 0) 100%), 
-    url("https://i.imgur.com/9htnS7A.jpg");
-    }
 
 }
+
+
+
+
+.homepage-second-slide span::before{
+    content: '';
+    animation: WordList  0.7s;
+    animation-iteration-count: 3;
+    animation-delay: 9s;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease-in-out;
+
+}
+.homepage-second-slide-scroll span::before{
+    content: '';
+    animation: ScrollList  1s;
+    animation-delay: 11s;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease-in-out;
+}
+
 
 @keyframes Landing{
 
-    0% {top: -100%;}
-    100% {top: 0%;}
+    0% {top: -110%;}
+    100% {bottom:0%;}
 
+}
+
+@keyframes second-slide{
+    0%{
+    opacity: 0;}
+    100%{
+    opacity: 1;}
 }
 
 
 
-@keyframes animate{
+@keyframes GreetingAnimation{
     0%{
+        opacity: 0;
         transition: ease;
     }
     20%{
-        content: 'Hi';
+        content: 'Hello!';
         opacity: 1;
     }
     80%{
@@ -155,15 +328,45 @@
 
 
 }
-@keyframes LandingCamera{
 
-    0% {left: -100%;}
+@keyframes WordList{
 
-    
-    100% {right: 0%;
-    opacity: 1;}
+    0%{
+        content: 'Freelancer';
+    }
+    20%{
+        content: 'Designer';
+    }
+    30%{
+        content: 'Developer';
+    }
+
+    40%{
+        content: 'Ilustrator';
+    }
+    50%{
+        content: 'Animatior';
+    }
+    60%{
+        content: 'Painter';
+    }
+    80%{
+        content: 'Design';
+    }
+    100%{
+        content: 'Artist';
+    }
 }
 
-@keyframes type{
-    from { width: 0; } 
+@keyframes ScrollList{
+    
+    0%{
+        content: '';
+        opacity: 0;
+    }
+
+    100%{
+        content: 'Scroll down to continue';
+        opacity: 1;
+    }
 }

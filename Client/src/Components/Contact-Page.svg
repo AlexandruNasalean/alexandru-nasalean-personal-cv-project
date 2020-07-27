@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1500" viewBox="0 0 2000 1500">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: #34385b;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        opacity: 0.91;
+      }
+
+      .cls-3 {
+        opacity: 0.63;
+      }
+
+      .cls-4 {
+        opacity: 0.28;
+      }
+
+      .cls-5 {
+        fill: #363636;
+      }
+
+      .cls-6 {
+        fill: #fb2968;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M1486.99,622.011l-13.76,92.074,90.79-34.992-77.03-57.082"/>
+  <path class="cls-2" d="M1780.46,366.8L1637.43,517.184l208.56,42.757L1780.46,366.8"/>
+  <path class="cls-3" d="M910.616,696.958L888.666,733h43.9l-21.95-36.038"/>
+  <path class="cls-4" d="M675.989,688.11l106.019-57.1L676.576,572.037,675.989,688.11"/>
+  <path class="cls-5" d="M971.048,616.818l0-.644,732.637,4.506v0.644Z"/>
+  <path class="cls-5" d="M1536.23,634.519v-0.644h81.71v0.644h-81.71Zm43.22,17.379v-0.644h55.37V651.9h-55.37Z"/>
+  <path class="cls-5" d="M1666.55,375.764h0.68V606.2h-0.68V375.764Z"/>
+  <path class="cls-5" d="M1659.8,633.232v-0.644h37.14v0.644H1659.8Z"/>
+  <path class="cls-2" d="M1654.4,714.977h-0.68V117.01h0.68V714.977Z"/>
+  <path id="Shape_11_copy" data-name="Shape 11 copy" class="cls-5" d="M909.522,230.088l0,0.742-804.5-5.191,0-.742Z"/>
+  <path id="Shape_12_copy" data-name="Shape 12 copy" class="cls-5" d="M288.908,209.7v0.742H199.19V209.7h89.718Zm-47.454-20.022v0.742h-60.8v-0.742h60.8Z"/>
+  <path id="Shape_13_copy" data-name="Shape 13 copy" class="cls-5" d="M145.8,507.8h-0.741V242.324H145.8V507.8Z"/>
+  <path id="Shape_14_copy" data-name="Shape 14 copy" class="cls-5" d="M153.219,211.179v0.741H112.438v-0.741h40.781Z"/>
+  <path id="Shape_8_copy" data-name="Shape 8 copy" class="cls-2" d="M159.151,117h0.741V805.912h-0.741V117Z"/>
+  <path class="cls-6" d="M105,154.928l12.38,185.382L274.5,230.6,105,154.928"/>
+</svg>
