@@ -16,6 +16,7 @@ import {ContactPage} from "./Components/ContactPage"
 import SimpleReactLightbox from "simple-react-lightbox";
 import AOS from "aos"
 import "aos/dist/aos.css"
+import ScrollToTop from "./scrollToTop";
 
 
 
@@ -25,21 +26,22 @@ function App() {
     AOS.refresh();
   });
   return (
+    <Router>
+            <ScrollToTop />
     <SimpleReactLightbox>
     <React.Fragment>
         <HeaderPageNavBar/>
-      <Router>
         <Switch>
           <Route exact path="/" component={HomePage}/>
-          <Route exact path="/ExperiencePage" component={ExperiencePage}/>
           <Route exact path="/Gallery" component={Gallery}/>
-          <Route exact path="/Studies" component={Studies}/>
           <Route exact path="/ContactPage" component ={ContactPage}/>
+          <Route exact path="/ExperiencePage" component ={ExperiencePage}/>
+
         </Switch>
         <Footer/>
-      </Router>
     </React.Fragment>
     </SimpleReactLightbox>
+    </Router>
 
   );
 }
