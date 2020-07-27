@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/AlexandruNasalean/alexandru-nasalean-personal-cv-project/issues"
   },
-  "homepage": "https://alexandrunasalean.github.io/alexandru-nasalean-personal-cv-project/",
+  "homepage": "https://AlexandruNasalean.github.io/alexandru-nasalean-personal-cv-project/",
   "dependencies": {
     "aos": "^2.3.4",
     "body-parser": "^1.19.0",
