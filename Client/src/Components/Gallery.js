@@ -16,7 +16,7 @@ export class Gallery extends Component {
          <SRLWrapper>
          <div id="content-page-one" className="container content">
           <div className="row">
-
+          
             {/* First Picture */}
             <div className="col-xl-12 col-image-large-long" data-aos="fade-up">
               <img src="https://i.imgur.com/JhyP5PO.jpg" alt="Crimson - 1" />
