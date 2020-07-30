@@ -1,5 +1,17 @@
+.NavBar{
+    padding: 40px 0 0;
 
+}
 
+.NavBar h1 {
+    text-align: center;
+    font-size: 60px;
+    color:  #34385b;
+    padding: 0 75px;
+}
+.justify-content-center{
+    padding-top: 30px;
+}
 
 .nav-item a{
     color:  #fb2968;
@@ -17,6 +29,3 @@
     font-weight: bold;
     border-bottom: 2px solid #fb2968;
 }
-
-
-

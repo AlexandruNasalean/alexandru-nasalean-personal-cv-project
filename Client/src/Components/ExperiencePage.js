@@ -12,7 +12,7 @@ import {UpcJob} from './Experience Tabs/Upc-Job'
 import {GameloftJob} from './Experience Tabs/Gameloft'
 import {AltexJob} from './Experience Tabs/AltexRomania'
 
-import "./Experience Tabs/ExperienceStyle.scss"
+import "./Experience Tabs/ExperienceStyle.css"
 
 
 
@@ -25,19 +25,21 @@ export class ExperiencePage extends Component {
               <h1>Experience</h1>
 </div>
                 <div>
-                  <h1>Work-Experience</h1>
                 <Tab.Container id="list-group-tabs-example" >
   <Row>
     <Col sm={4}>
       <ListGroup variant="flush">
         <ListGroup.Item action href="#link1">
-        Junior Support/QA Analyst
+          Luminos Software
         </ListGroup.Item>
         <ListGroup.Item action href="#link2">
-        Technical Support Help Desk
+          UPC Romania
+        </ListGroup.Item>
+        <ListGroup.Item action href="#link3">
+          Altex
         </ListGroup.Item>
         <ListGroup.Item action href="#link4">
-        Quality Assurance Analyst
+          Gameloft 
         </ListGroup.Item>
       </ListGroup>
     </Col>
@@ -59,17 +61,6 @@ export class ExperiencePage extends Component {
     </Col>
   </Row>
 </Tab.Container>
-                </div>
-                <h1>Technologies</h1>
-                <p>I have experience with the following technologies:</p>
-                <div className="Technologies-Logos">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" id="React-Logo"></img>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" id="HTML5-Logo"></img>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" id="Node-Js-Logo"></img>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" id="CSS-Logo"></img>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg" id="Sass-Logo"></img>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" id="JS-Logo"></img>
-
                 </div>
             </div>
          );

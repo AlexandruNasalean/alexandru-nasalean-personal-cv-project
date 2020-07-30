@@ -16,20 +16,20 @@ export class Gallery extends Component {
          <SRLWrapper>
          <div id="content-page-one" className="container content">
           <div className="row">
-
-            {/* First Picture */ }
-            <div className="col-xl-12 col-image-large-long">
+          
+            {/* First Picture */}
+            <div className="col-xl-12 col-image-large-long" data-aos="fade-up">
               <img src="https://i.imgur.com/JhyP5PO.jpg" alt="Crimson - 1" />
             </div>
            
            {/* Second Picture */}
-            <div className="col-md-6 col-12 col-image-half" >
+            <div className="col-md-6 col-12 col-image-half" data-aos="fade-left">
               <img src="https://i.imgur.com/hsYU54I.jpg" alt="Crimson - 2" />
             </div>
 
             {/* Third Picture */}
             <div className="col-md-6 col-12 col-image-half">
-              <img src="https://i.imgur.com/g9Huncz.jpg"  alt="Crimson - 3" />
+              <img src="https://i.imgur.com/g9Huncz.jpg" data-aos="fade-right" alt="Crimson - 3" />
             </div>
 
             {/* Fourth Picture */}
